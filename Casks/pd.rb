@@ -2,7 +2,7 @@ cask "pd" do
   version "0.52-1-really"
   sha256 "c8721aa1ec3d433d28e055bd6a64559723d28e0eb49c0ac1401d6ae46621e4db"
 
-  url "http://msp.ucsd.edu/Software/pd-#{version.major_minor_patch}.macos.zip"
+  url "http://msp.ucsd.edu/Software/pd-#{version.rpartition('-')[0]}.macos.zip"
   name "Pd"
   desc "Visual programming language for multimedia"
   homepage "http://msp.ucsd.edu/software.html"
